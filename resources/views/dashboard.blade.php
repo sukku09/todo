@@ -83,6 +83,8 @@ footer {
     <ul>
       <li> <a style="text-decoration: none; color : black"  href="add-task"> Add Task </a></li>
       <li> <a style="text-decoration: none; color : black"  href="list-task"> List Of Tasks </a></li>
+      <li> <a style="text-decoration: none; color : black"  href="list-pending-task"> List Of Pending Task </a></li>
+            <li> <a style="text-decoration: none; color : black"  href="list-completed-task"> List Of Completed Tasks </a></li>
     </ul>
   </nav>
   

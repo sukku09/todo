@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
     * {
       box-sizing: border-box;
     }
@@ -137,19 +133,3 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
-</style>
-</head>
-<body>
-    <header>
-        <h2>Dashboard</h2>
-      </header>
-
-      <section>
-        <nav>
-          <ul>
-            <li> <a style="text-decoration: none; color : black"  href="add-task"> Add Task </a></li>
-            <li> <a style="text-decoration: none; color : black"  href="list-task"> List Of Tasks </a></li>
-            <li> <a style="text-decoration: none; color : black"  href="list-task"> List Of Pending Task </a></li>
-            <li> <a style="text-decoration: none; color : black"  href="list-task"> List Of Completed Tasks </a></li>
-          </ul>
-        </nav>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Task;
+use Validator;
 
 class TODOController extends Controller
 {
@@ -21,7 +22,7 @@ class TODOController extends Controller
             'tname' => 'required',
             't_assigne' => 'required',
             'start_date'=>'required',
-            'end_date'=>'required'
+            'end_date'=>'required|after_or_equal:start_date'
         );    
         $messages = array(
             'tname.required' => 'Task Name is required.',
@@ -40,7 +41,7 @@ class TODOController extends Controller
         $task->task_enddate = $request->end_date;
         $task->status = 0;
         $task->save();
-        return back()->with('success','Successfully add New Task');
+        return back()->with('success','New Task Created Successfully');
     }
 
     public function listOfTask(Request $request)
